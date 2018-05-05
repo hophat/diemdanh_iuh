@@ -1,0 +1,6 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteRule ^trangchu-(.*)-chedo=(.*)-so_sv=(.*)-id_hp=(.*)$ trangchu.php?site_chl=$1&chedo=$2&so_sv=$3&id_hp=$4 [L]
+RewriteRule ^trangchu-(.*)-(.*)$ trangchu.php?site_chl=$1&ma_HP=$2 [L]
+RewriteRule ^trangchu-(.*)$ trangchu.php?site_chl=$1 [L]
