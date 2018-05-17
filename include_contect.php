@@ -28,8 +28,10 @@
 						include('contect/site_ds_sinhvien.php');break;
 					case 'site_ds_sv_camthi': 
 						include('contect/site_ds_sv_camthi.php');break;
+					case 'testing': 
+						include('contect/testing.php');break;
 					default:
-						include('contect/site_showhocphan.php');break;
+						include('contect/error.php');break;
 				}
 		?>
 		</section>

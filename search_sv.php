@@ -84,7 +84,7 @@
     function show_kq_search(mssv)
     {
        if (mssv.length == 8 ) {
-        url = 'localhost/diemdanh/';
+        url = 'http://diemdanh.ebooktinhoc.com/';
        
          $.post(
                  url+'php/ajax/search_dd_sv.php',

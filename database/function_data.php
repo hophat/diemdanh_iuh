@@ -5,6 +5,7 @@
 //=========================================================================================================
 
 //--------- Kết nối cở sở dữ liệu mysql --------------------------------------------------------
+
 	function CONNECT_MYSQL($dsn,$account,$passw)
 	{
 		$options = array(
@@ -28,6 +29,7 @@
 //----------------
 
 // ------- Fetch_assoc trả kiểu dữ liệu về kiểu mảng ['tên_cột_trong_table'=>'giá_trị']---------
+	
 	 function FETCH_ASSOC( $query)
 	 {
 	 	GLOBAL $conn;

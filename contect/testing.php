@@ -1,12 +1,11 @@
 <?php 
-
 $query = 'SELECT * FROM diemdanh dd JOIN sinhvien sv ON dd.mssv=sv.mssv JOIN hocphan hp ON dd.id_lophocphan = hp.id_lophocphan order by sv.mssv ';
 
 // echo '<pre>'; print_r(FETCH_ASSOC($query));
 $result =  FETCH_ASSOC($query);
-	$dem 	=	0;
+	
 foreach ($result as $ttdiemdanh) {
-
+		$dem 	=	0;
 			if($ttdiemdanh['buoi1']=='0000-00-00')
 			{
 				$dem=$dem+1;
@@ -81,11 +80,12 @@ foreach ($result as $ttdiemdanh) {
 			);
 		$thongtin[$ttdiemdanh['tenhocphan']][] = $ketqua;
 	}
-	echo count($thongtin);
-	
+	//echo count($thongtin);
+		
 	foreach ($thongtin as $kq) {
-
+		print_r($ttdiemdanh['tenhocphan']);	
 			echo '<pre>';echo count($kq) ;
+
 			print_r($kq);
 	}
 	//echo '<pre>'; print_r(count($thongtin));
